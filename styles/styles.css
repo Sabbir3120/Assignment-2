@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Shared-Color */
+.orange-color{
+  color: rgb(230, 83, 60);
+}
+
+/* Shared Styles */
+.display-flex{
+  display: flex;
+}
+
+
+/* Header>Nav-bar */
+
+.nav-bar{
+  /* width: 1160px;
+  height: 46px; */
+  /* border: 1px solid black; */
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: black;
+}
+.brand{
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: rgb(230, 83, 60);
+  margin-left: 5px;
+}
+.nav-item{
+  list-style: none;
+  margin-right: 50px;
+}
+.nav-link{
+  text-decoration: none;
+  font-size: 1.13rem;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+.nav-links{
+  align-items: center;
+  width: 450px;
+  height: 44px;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+#nav-bar-home{
+  position: relative;
+  right: 34px;
+}
+#nav-bar-home-btn{
+  font-size: 1.13rem;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  background-color: rgb(230, 83, 60);
+  border-radius: 40px;
+  border: none;
+  padding: 8px 18px;
+
+}
