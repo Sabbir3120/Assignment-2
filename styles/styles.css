@@ -94,7 +94,7 @@
   color: rgba(255, 255, 255, 0.5);
   margin-top: 30px;
 }
-.join-club-now{
+.join-club-now, .Join-now{
   font-size: 1.13rem;
   font-weight: 600;
   color: rgb(255, 255, 255);
@@ -208,4 +208,79 @@
   padding-top: 20px;
   justify-content: center;
   background-color: black;
+}
+.flyer-text-heading{
+  font-size: 3rem;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+}
+.flyer-text-paragraph{
+  font-size: .8rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+.flyer-image{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.flyer-images{
+  max-width: 366px;
+  max-height: 312px;
+  background-size: cover;
+  border-radius: 20px;
+}
+.flyer{
+  width: 1100px;
+  height: 400px;
+  border-radius: 18px;
+  background: rgb(34, 34, 34);
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid rgba(94, 92, 92, 0.5);
+}
+.flyer-section{
+  background-color: black;
+  padding: 50px 0px;
+}
+/* <!-- BMI Calculator --> */
+
+
+/* <!-- BMI Calculator --> */
+/* Meet Our Team Section */
+.our-team-heading{
+  font-size: 3rem;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+}
+.our-team-paragraph{
+  font-size: .9rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+.our-team-text{
+  text-align: center;
+}
+.our-team-images{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  max-width: 1060px;
+  max-height: 804px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 50px;
+}
+.team-image{
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+}
+.team-section{
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 90px;
 }
