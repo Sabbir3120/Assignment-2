@@ -25,10 +25,10 @@
     <main>
         <div class="banner display-flex">
             <div class="banner-left">
-                <h3 class="banner-left-heading">Get body in <br> <span class="grey-qo-regular">shape</span> & stay <br> healthy</h3>
+                <h3 class="banner-left-heading">Get body in <br> <span class="grey-qo-regular"><i>shape</i></span> & stay <br> healthy</h3>
                 <p class="banner-left-paragraph">A huge selection of health and fitness content, healthy recipes <br> and transformation stories to help you get fit and stay fit!</p>
                 <div class="banner-left-btn">
-                    <button class="join-club-now">Join Club Now!</button>
+                    <button id="jcn" class="join-club-now">Join Club Now!</button>
                 <button class="download-app">Download App</button>
                 </div>
             </div>
@@ -91,9 +91,62 @@
             </div>
         </div>
         <!-- BMI Calculator -->
-
+        <div class="bmi-section ">
+            <div class="bmi-main-text">
+                <h3 class="bmi-main-heading">BMI Calculator</h3>
+                <p class="bmi-main-paragraph">We believe fitness should be accessible to everyone, everywhere, <br>regardless of income or access to a gym.</p>
+            </div>
+            <div class="bmi-all-item display-flex">
+                <div class="bmi-left-part">
+                    <h3 id="bmi-heading">BMI Calculator</h3>
+                    <table border="1">
+                        <tr>
+                            <td class="bmi-title-text bmi-td">BMI</td>
+                            <td class="bmi-title-text bmi-td">Weight Status</td>
+                        </tr>
+                        <tr>
+                            <td class="bmi-td">Below 18.5</td>
+                            <td class="bmi-td">Underweight</td>
+                        </tr>
+                        <tr>
+                            <td class="bmi-td">18.5 - 24.9</td>
+                            <td class="bmi-td">Healthy</td>
+                        </tr>
+                        <tr>
+                            <td class="bmi-td">25.0 - 29.9</td>
+                            <td class="bmi-td">Overweight</td>
+                        </tr>
+                        <tr>
+                            <td class="bmi-td">30.0 - and Above</td>
+                            <td class="bmi-td">Obese</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bmi-right-part">
+                    <h3 class="bmi-right-part-heading">Calculate your BMI</h3>
+                    <p class="bmi-right-part-paragraph">We believe fitness should be accessible to everyone, everywhere, <br> regardless of income or access to a gym.</p>
+                    <div class="bmi-right-part-items">
+                        <div class="bmi-right-part-item">
+                            <input class="bmi-right-part-box" type="text" placeholder="Height/cm">
+                            <input class="bmi-right-part-box" type="text" placeholder="Weight/kg">
+                        </div>
+                        <div class="bmi-right-part-item">
+                            <input class="bmi-right-part-box" type="text" placeholder="Age"> 
+                            <select class="bmi-right-part-box" value="Sex" name="" id="">
+                                <option value="Male" selected>Sex</option>
+                            </select>
+                        </div>
+                        <div class="bmi-right-part-item">
+                            <select class="bmi-right-part-box1" value="Sex" name="" id="">
+                                <option value="Male" selected>Select an activity factor</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="calculate">Calculate</button>
+                </div>
+            </div>
+        </div>
         <!-- BMI Calculator -->
-
         <!-- Meet Our Team Section -->
          <div class="team-section">
             <div class="our-team">
@@ -146,9 +199,7 @@
                     <p class="footer-right-paragraph">Fitness <br> Platform <br> Workout Library <br> App Design</p>
                 </div>
             </div>
-         </div>
-         <div class="footer-box">
-            
+            <hr id="footer-line" width="70%" />
          </div>
          <div class="footer-warning">
             <p class="footer-warning-text">All right reserved @Fitness 2024</p>
