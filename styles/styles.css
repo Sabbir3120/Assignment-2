@@ -20,6 +20,14 @@
   font-style: normal;
 }
 
+/* .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 24
+} */
+
 /* Shared-Color */
 .orange-color{
   color: rgb(230, 83, 60);
@@ -35,6 +43,8 @@
 
 .nav-bar{
   justify-content: space-between;
+  /* margin-right: auto;
+  margin-left: auto; */
   align-items: center;
   padding-left: 100px;
   padding-right: 100px;
@@ -44,7 +54,7 @@
   font-size: 2.25rem;
   font-weight: 800;
   color: rgb(230, 83, 60);
-  margin-left: 5px;
+  /* margin-left: 5px; */
 }
 .nav-item{
   list-style: none;
@@ -58,10 +68,13 @@
 }
 .nav-links{
   align-items: center;
-  width: 450px;
+  width: 550px;
   height: 44px;
   border-radius: 40px;
   border: 2px solid rgba(255, 255, 255, 0.1);
+}
+.ham-burger{
+  display: none;
 }
 #nav-bar-home{
   position: relative;
@@ -133,6 +146,9 @@
   position: relative;
   margin-top: -450px;
   margin-left: 250px;
+}
+.banner-right{
+  position: relative;
 }
 .banner-right-heading1{
   font-size: 2.5rem;
@@ -233,7 +249,7 @@
 }
 .flyer-image{
   max-width: 100%;
-  max-height: 100%;
+  max-height: auto;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -245,7 +261,7 @@
 }
 .flyer{
   max-width: 1100px;
-  max-height: 400px;
+  max-height: 100%;
   border-radius: 18px;
   background: rgb(34, 34, 34);
   justify-content: space-around;
@@ -323,15 +339,15 @@
   padding-bottom: 20px;
 }
 .bmi-right-part-box{
-  width: 282.5px;
+  width: 100%;
   height: 48px;
   background-color:rgb(44, 43, 43);
-  color:  rgba(255, 255, 255, 0.1);
+  color:  rgb(255, 252, 252);
   gap: 10px;
   border-radius: 8px;
 }
 .bmi-right-part-box1{
-  width: 577px;;
+  width: 577px;
   height: 48px;
   background-color:rgb(44, 43, 43);
   color:  rgba(255, 255, 255, 0.1);
@@ -361,7 +377,7 @@ padding-top: 5px;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
   max-width: 1060px;
-  max-height: 804px;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
@@ -378,6 +394,8 @@ padding-top: 5px;
   background-color: black;
   padding-top: 20px;
   padding-bottom: 90px;
+  /* max-height: auto; */
+  /* position: relative; */
 }
 .trainer-name{
   font-size: 1.2rem;
@@ -396,7 +414,8 @@ padding-top: 5px;
 }
 .footer-section-text{
   max-width: 1100px;
-  max-height: 300px;
+  /* max-height: 300px; */
+  max-height: auto;
   justify-content: space-evenly;
   border: none;
   margin-left: auto;
@@ -451,3 +470,116 @@ padding-top: 5px;
   padding-bottom: 10px;
 }
 
+/* Responsive */
+
+/* Responsive For Small Device */
+@media screen and (max-width:576px) {
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .nav-bar{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .right-nav{
+    display: none;
+  }
+  .ham-burger{
+    display: block;
+    color: aliceblue;
+  }
+   .banner{
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+   }
+    .banner-right-img-bri{
+      max-width: 100%;
+      height: auto; 
+    }
+    .download-app, .join-club-now{
+      padding: 5px;
+    }
+    .card-1{
+      position: absolute;
+      right: 50px;
+      top: 550px;
+      gap: 0;
+    }
+    .card-2{
+      position: absolute;
+      left: 150px;
+      top: 200px;
+    }
+    .images, .flyer{
+      flex-direction: column;
+      row-gap: 10px;
+    }
+    .flyer-section{
+      max-width: 100%;
+      max-height: auto;
+      justify-content: center;
+    }
+    .flyer-text{
+      text-align: center;
+    }
+    .flyer-image{
+      max-width: 100%;
+      max-height: auto;
+      padding: 0px 5px;
+    }
+    .team-section{
+      flex-direction: column;
+    }
+    .our-team{
+      flex-direction: column;
+    }
+    .our-team-images{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-section-text{
+      flex-direction: column;
+      height: auto;
+      row-gap: 10px;
+      padding-left: 10px;
+    }
+    .images-1 , .images-2 , .images-3{
+      margin: 0px;
+      padding: 0px;
+      padding-bottom: 10px;
+    }
+    .flyer-image{
+      text-align: center;
+    }
+    .flyer-images{
+      width: 100%;
+    }
+    .bmi-all-item{
+      flex-direction: column;
+      margin: 5px;
+      align-items: center;
+    }
+    .bmi-left-part{
+      padding: 0;
+    }
+    .bmi-right-part{
+      flex-direction: column;
+      row-gap: 10px;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: ;
+    }
+     #bmi-right-part-item-box1, #bmi-right-part-item-box2{
+      display: flex;
+     }
+     .bmi-right-part{
+      padding-left: 10px;
+      padding-right: 10px;
+      box-sizing: border-box;
+     }
+     .bmi-right-part-box1{
+      width: 100%;
+      box-sizing: border-box;
+     }
+  }
