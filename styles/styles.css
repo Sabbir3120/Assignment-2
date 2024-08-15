@@ -40,9 +40,14 @@
 
 
 /* Header>Nav-bar */
-
+.nav-section{
+  padding-top: 30px;
+  padding-bottom: 10px;
+  background-color: black;
+}
 .nav-bar{
   justify-content: space-between;
+  
   /* margin-right: auto;
   margin-left: auto; */
   align-items: center;
@@ -58,7 +63,6 @@
 }
 .nav-item{
   list-style: none;
-  margin-right: 50px;
 }
 .nav-link{
   text-decoration: none;
@@ -67,6 +71,7 @@
   color: rgb(255, 255, 255);
 }
 .nav-links{
+  justify-content: space-around;
   align-items: center;
   width: 550px;
   height: 44px;
@@ -76,10 +81,10 @@
 .ham-burger{
   display: none;
 }
-#nav-bar-home{
+/* #nav-bar-home{
   position: relative;
   right: 34px;
-}
+} */
 #nav-bar-home-btn{
   font-size: 1.13rem;
   font-weight: 500;
@@ -92,9 +97,11 @@
 /* Main Section */
 /* Main Section>Banner */
 .banner{
-  background-color: rgb(0, 0, 0);;
+  background-color: rgb(0, 0, 0);
   gap: 300px;
   justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .banner-left-heading{
   font-size: 4.8rem;
@@ -199,10 +206,11 @@
   font-weight: 400;
   color: rgba(255, 255, 255, 0.5);
 }
+
 .image-section-title{
   text-align: center;
   background-color: black;
-  padding-top: 20px;
+  padding-top: 50px;
   padding-bottom: 10px;
 }
 
@@ -516,6 +524,10 @@ padding-top: 5px;
       flex-direction: column;
       row-gap: 10px;
     }
+    
+    .flyer{
+      text-align: center;
+    }
     .flyer-section{
       max-width: 100%;
       max-height: auto;
@@ -549,16 +561,13 @@ padding-top: 5px;
       padding: 0px;
       padding-bottom: 10px;
     }
-    .flyer-image{
-      text-align: center;
-    }
     .flyer-images{
       width: 100%;
     }
     .bmi-all-item{
       flex-direction: column;
-      margin: 5px;
       align-items: center;
+      padding-top: 15px;
     }
     .bmi-left-part{
       padding: 0;
@@ -568,7 +577,8 @@ padding-top: 5px;
       row-gap: 10px;
       max-width: 100%;
       margin-left: auto;
-      margin-right: ;
+      margin-right: auto;
+      margin-top: 20px;
     }
      #bmi-right-part-item-box1, #bmi-right-part-item-box2{
       display: flex;
@@ -583,3 +593,62 @@ padding-top: 5px;
       box-sizing: border-box;
      }
   }
+
+/* Responsive For Big Device */
+@media screen and (min-width:993px){
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.banner{
+  padding: 30px;
+  background-color: black;
+  gap: 150px;
+}
+.join-club-now, .download-app{
+  padding: 15px;
+}
+.flyer{
+  margin: 30px;
+}
+.bmi-all-item{
+  gap: 0px;
+  padding: 30px;
+}
+/* bmi */
+.bmi-all-item{
+  flex-direction: row;
+  align-items: center;
+  padding-top: 15px;
+  justify-content: space-around;
+}
+.bmi-left-part{
+  padding: 0;
+}
+.bmi-right-part{
+  flex-direction: column;
+  row-gap: 10px;
+  max-width: 100%;
+}
+ #bmi-right-part-item-box1, #bmi-right-part-item-box2{
+  display: flex;
+ }
+ .bmi-right-part{
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+ }
+ .bmi-right-part-box1{
+  width: 100%;
+  box-sizing: border-box;
+ }
+ .flyer{
+  margin: 0;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+ }
+ .flyer-section{
+  padding: 30px;
+ }
+}
